@@ -1,0 +1,198 @@
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+body {
+  font-family: "League Spartan", sans-serif;
+  background-color: rgb(248, 52, 52);
+}
+
+.calculate {
+  display: flex;
+  height: 100vh;
+  /* flex-wrap: wrap;
+  flex: 0 0 100%;
+ max-width: 100%; */
+  order: 1;
+}
+
+.container {
+  width: 680px;
+  height: 600px;
+  background-color: rgb(119, 42, 182);
+  color: white;
+  border-radius: 20%;
+  overflow: hidden;
+  margin: auto;
+  box-shadow: 0 0 35px 2px rgb(45, 29, 70);
+  border-style: solid;
+}
+.title {
+  text-align: center;
+  font-size: 70px;
+  color: rgb(231, 225, 225);
+  font-weight: 600;
+  margin-top: 17px;
+  -webkit-text-stroke: 3px rgb(0, 0, 0);
+  text-shadow: 2px 2px 5px rgb(199, 189, 189);
+}
+
+.container-content {
+  text-align: center;
+}
+.display {
+  width: 90%;
+  height: 120px;
+  border: none;
+  outline: none;
+  margin-bottom: 15px;
+  margin-top: 12px;
+  padding: auto;
+  border-radius: 25px;
+  box-shadow: 0 0 35px 2px rgb(45, 29, 70);
+  font-size: 50px;
+  text-align: right;
+  padding-right: 20px;
+  color: rgb(7, 6, 6);
+  font-weight: 600;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 5px 5px 10px rgb(199, 189, 189);
+  border-style: solid;
+}
+
+.btn-row1 {
+  width: 100%;
+  margin-bottom: 10px;
+}
+.btn-row1:last-child {
+  margin-bottom: 0;
+}
+
+.btn-1 {
+  appearance: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 60px;
+  margin: 3px;
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+  line-height: 17px;
+  border-radius: 10px;
+  overflow: none;
+  cursor: pointer;
+  transition: transform 0.1s;
+  box-shadow: 2px 2px 5px rgb(199, 189, 189), -2px -2px 5px rgb(199, 189, 189);
+}
+
+.btn-1:hover {
+  box-shadow: inset 2px 2px 5px rgb(197, 195, 195),
+    inset -2px -2px 5px rgb(199, 189, 189);
+  transform: scale(1.1);
+}
+
+#ac {
+  background-color: chartreuse;
+}
+#c {
+  background-color: rgb(253, 12, 12);
+}
+#eval {
+  background-color: rgba(80, 113, 221, 0.925);
+}
+
+@media (max-width: 1400px) {
+  .container {
+    width: 680px;
+  }
+  .btn-1 {
+    width: 100px;
+    font-size: 30px;
+    text-align: center;
+    font-weight: 600;
+  }
+  .title {
+    font-size: 70px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .container {
+    width: 500px;
+  }
+  .btn-1 {
+    width: 65px;
+    font-size: 25px;
+    text-align: center;
+    font-weight: 600;
+  }
+  .title {
+    font-size: 70px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 400px;
+  }
+  .btn-1 {
+    width: 50px;
+    font-size: 20px;
+    text-align: center;
+    font-weight: 600;
+  }
+  .title {
+    font-size: 60px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    width: 300px;
+    border-radius: 10%;
+  }
+  .btn-1 {
+    width: 40px;
+    font-size: 15px;
+    text-align: center;
+    font-weight: 600;
+    text-align: center;
+    line-height: 10px;
+  }
+  .title {
+    font-size: 50px;
+  }
+}
