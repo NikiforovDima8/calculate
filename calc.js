@@ -77,11 +77,4 @@ console.log(btnLog1)
 const aa=Math.sin('0')
 
 console.log(aa)
-console.log(aa)
-console.log(aa)
-console.log(aa)
-console.log(aa)
-
-
-
 
